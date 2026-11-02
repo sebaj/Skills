@@ -1,0 +1,58 @@
+{
+  "referencia": "INC-2026-041",
+  "identificacion": {
+    "fecha_hora_deteccion": "10/09/2026, 07:40",
+    "detectado_por": "M. Ferrer (calidad en planta)",
+    "turno": "Mañana",
+    "area_linea": "Línea de envasado 2 — termoselladora",
+    "clasificacion": "Defecto de envase / integridad del sellado",
+    "gravedad": "Media — producto retenido antes de expedición (propuesta — a confirmar por Calidad)"
+  },
+  "producto": {
+    "referencia": "Pollo asado entero en atmósfera protegida, 1.100 g",
+    "lote": "L26-2138",
+    "cantidad_fabricada": "820 unidades",
+    "cantidad_afectada": "146 unidades",
+    "destino_previsto": "Plataforma de distribución de cliente nacional",
+    "situacion_actual": "Bloqueado en cámara CAM-01 a la espera de decisión"
+  },
+  "descripcion": [
+    "Durante el control visual de inicio de turno se detectaron bandejas con pérdida de vacío en el primer palé del lote L26-2138. La inspección ampliada sobre 60 unidades adicionales confirmó 12 unidades con sellado incompleto en el lateral derecho de la bandeja. Se comprobó que el defecto se concentra en las unidades producidas entre las 05:10 y las 06:05 del 10/09/2026."
+  ],
+  "acciones_inmediatas": [
+    "Parada de la línea 2 a las 07:45 y aviso al responsable de producción.",
+    "Bloqueo cautelar del lote completo L26-2138 e identificación con etiqueta roja.",
+    "Inspección al 100 % de las unidades del lote: 146 unidades separadas.",
+    "Revisión de los lotes anteriores L26-2135 y L26-2136: sin defecto."
+  ],
+  "evaluacion": {
+    "unidades_conformes": "674 — liberadas para expedición el 10/09/2026",
+    "unidades_no_conformes": "146 — destinadas a destrucción",
+    "riesgo_consumidor": "No se ha expedido producto afectado. Sin riesgo asociado.",
+    "coste_estimado": "1.240 €"
+  },
+  "causa_raiz": {
+    "metodo": "Método aplicado: cinco porqués.",
+    "porques": [
+      {"nivel": 1, "pregunta": "¿Por qué hay pérdida de vacío?", "respuesta": "El sellado del lateral derecho es incompleto."},
+      {"nivel": 2, "pregunta": "¿Por qué el sellado es incompleto?", "respuesta": "La resistencia de la mordaza no alcanza la temperatura de consigna en ese lateral."},
+      {"nivel": 3, "pregunta": "¿Por qué no alcanza la consigna?", "respuesta": "Una de las dos resistencias de la mordaza superior presenta desgaste."},
+      {"nivel": 4, "pregunta": "¿Por qué no se detectó el desgaste?", "respuesta": "La revisión de mordazas no figura en el plan de mantenimiento preventivo de la línea 2."},
+      {"nivel": 5, "pregunta": "¿Por qué no figura en el plan?", "respuesta": "El plan no se actualizó tras la sustitución de la termoselladora en marzo de 2026."}
+    ],
+    "conclusion": "plan de mantenimiento preventivo desactualizado tras el cambio de equipo, que deja fuera la verificación periódica de las resistencias de mordaza."
+  },
+  "acciones_correctivas": [
+    {"accion": "Sustitución de las dos resistencias de la mordaza superior", "responsable": "Mantenimiento", "plazo": "10/09/2026"},
+    {"accion": "Actualización del plan de mantenimiento preventivo de la línea 2", "responsable": "Mantenimiento / Calidad", "plazo": "24/09/2026"},
+    {"accion": "Añadir verificación de sellado al control de inicio de turno", "responsable": "Calidad en planta", "plazo": "15/09/2026"},
+    {"accion": "Formación breve al personal de línea sobre el nuevo control", "responsable": "Calidad en planta", "plazo": "30/09/2026"}
+  ],
+  "verificacion_eficacia": "Prevista para el 15/10/2026. Criterio: ausencia de incidencias por pérdida de vacío en la línea 2 durante cuatro semanas consecutivas y constancia documental de la revisión de mordazas en el plan de mantenimiento.",
+  "cierre": {
+    "estado": "Pendiente de verificación de eficacia",
+    "redactado_por": "M. Ferrer",
+    "revisado_por": "Responsable del Departamento de Calidad",
+    "fecha_emision": "11/09/2026"
+  }
+}
